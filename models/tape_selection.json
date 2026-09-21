@@ -1,0 +1,147 @@
+{
+  "benchmark": "growth",
+  "likelihood": "student",
+  "benchmark_likelihood_scores": {
+    "('growth', 'student')": -1.20476999846154,
+    "('broad', 'student')": -1.2116054408354895,
+    "('growth', 'gaussian')": -1.6515635983218775,
+    "('broad', 'gaussian')": -1.6517236209687252
+  },
+  "final_start": "2025-01-01",
+  "selection_rule": "richer model requires positive lower 95% IPO-bootstrap log-score gain, nonworsening CRPS and diagnostics; otherwise keep simpler model",
+  "cutoffs": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "size_conditioned": true,
+  "size_gate": {
+    "1": {
+      "delta": 0.1253653122149231,
+      "lo": 0.06976631632313929,
+      "hi": 0.17749852182715334,
+      "n": 298
+    },
+    "5": {
+      "delta": 0.07036878283930366,
+      "lo": 0.024349865851224967,
+      "hi": 0.11406958354179432,
+      "n": 298
+    },
+    "10": {
+      "delta": 0.04771962775763541,
+      "lo": 0.008984825232852319,
+      "hi": 0.08766656222051881,
+      "n": 298
+    },
+    "20": {
+      "delta": 0.04716962885724733,
+      "lo": 0.009988538581733035,
+      "hi": 0.08449886778653537,
+      "n": 298
+    }
+  },
+  "selected_by_cutoff": {
+    "1": "M2",
+    "5": "M3",
+    "10": "M3",
+    "20": "M3"
+  },
+  "comparisons": {
+    "1:M1-M0": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 298,
+      "crps_delta": 0.0
+    },
+    "1:M2-M1": {
+      "delta": 0.08882938874309265,
+      "lo": 0.04739238455856585,
+      "hi": 0.1359423419836246,
+      "n": 298,
+      "crps_delta": -0.033747704025152064
+    },
+    "1:M3-M2": {
+      "delta": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 298,
+      "crps_delta": 0.0
+    },
+    "5:M1-M0": {
+      "delta": 0.0073000593714404585,
+      "lo": -0.0056938448886795475,
+      "hi": 0.02148623427493298,
+      "n": 298,
+      "crps_delta": 0.0015505956924001343
+    },
+    "5:M2-M1": {
+      "delta": 0.0696736490594673,
+      "lo": 0.03615676499338018,
+      "hi": 0.10930946228144715,
+      "n": 298,
+      "crps_delta": -0.022838538858790967
+    },
+    "5:M3-M2": {
+      "delta": 0.04257238669928496,
+      "lo": 0.01256008717404169,
+      "hi": 0.07415836793885973,
+      "n": 298,
+      "crps_delta": -0.0053564528912717875
+    },
+    "10:M1-M0": {
+      "delta": 0.013707666201758286,
+      "lo": 0.0015139542363953049,
+      "hi": 0.027061030907685333,
+      "n": 298,
+      "crps_delta": 0.0002092830622145673
+    },
+    "10:M2-M1": {
+      "delta": 0.03825878798896904,
+      "lo": 0.007511530365059626,
+      "hi": 0.07157006119148211,
+      "n": 298,
+      "crps_delta": -0.015472159823942467
+    },
+    "10:M3-M2": {
+      "delta": 0.05773644946591756,
+      "lo": 0.014871522785987027,
+      "hi": 0.09936967444437331,
+      "n": 298,
+      "crps_delta": -0.0028679224224626245
+    },
+    "20:M1-M0": {
+      "delta": 0.015190249334261661,
+      "lo": 0.0033856788142548585,
+      "hi": 0.028249394084708116,
+      "n": 298,
+      "crps_delta": -0.0010121198660072845
+    },
+    "20:M2-M1": {
+      "delta": 0.025616183354201044,
+      "lo": 0.004748275995827378,
+      "hi": 0.04857150374069835,
+      "n": 298,
+      "crps_delta": -0.007031459120587941
+    },
+    "20:M3-M2": {
+      "delta": 0.04354939698974903,
+      "lo": 0.010463550410922787,
+      "hi": 0.07726645067283396,
+      "n": 298,
+      "crps_delta": -0.0024373747242428362
+    }
+  },
+  "size_interaction": {
+    "delta": -0.005703235225188311,
+    "lo": -0.014409942874982037,
+    "hi": 0.0028977533098848564,
+    "n": 298
+  },
+  "offered_turnover_comparison": "Not fitted: cached Yahoo split ledgers omit known historical events; share-unit proxy cannot be certified. Dollar intensity is unit invariant.",
+  "size_interaction_retained": false,
+  "size_interaction_note": "Interaction diagnostic is limited to t=10; adoption additionally requires robustness to prior scale and final calibration. It is not automatically promoted by coefficient sign.",
+  "elapsed_seconds": 273.2611379623413
+}
